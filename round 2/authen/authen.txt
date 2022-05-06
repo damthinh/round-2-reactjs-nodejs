@@ -1,0 +1,12 @@
+bcrypt
+jsonwebtoken
+dotenv
+dotenv.config()
+bcrypt.compare
+jwt.sign
+expiresIn
+bcrypt.hash
+jwt.verify
+process.env.
+
+

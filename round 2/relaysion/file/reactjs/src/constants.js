@@ -1,0 +1,54 @@
+// domain
+// export const DOMAIN = "https://c43658a3a90b.ngrok.io";
+// export const DOMAIN = "https://f32531d8ff9a.ngrok.io";
+export const DOMAIN = "http://localhost:3001/";
+
+export const LIMIT = 10;
+
+// HTTP method 
+export const HTTP_READ = "GET"
+export const HTTP_CREATE = "POST"
+export const HTTP_UPDATE = "PUT"
+export const HTTP_DELETE = "DELETE"
+
+
+export const GET_ALL_REQUEST = 'GET_ALL_REQUEST'
+export const GET_ALL_SUCCESS = 'GET_ALL_SUCCESS'
+export const GET_ALL_FAILURE = 'GET_ALL_FAILURE'
+
+export const ADD_GV_REQUEST = 'ADD_GV_REQUEST'
+export const ADD_GV_SUCCESS = 'ADD_GV_SUCCESS'
+export const ADD_GV_FAILURE = 'ADD_GV_FAILURE'
+
+export const UPDATE_GV_REQUEST = 'UPDATE_GV_REQUEST'
+export const UPDATE_GV_SUCCESS = 'UPDATE_GV_SUCCESS'
+export const UPDATE_GV_FAILURE = 'UPDATE_GV_FAILURE'
+
+export const DELETE_GV_REQUEST = 'DELETE_GV_REQUEST'
+export const DELETE_GV_SUCCESS = 'DELETE_GV_SUCCESS'
+export const DELETE_GV_FAILURE = 'DELETE_GV_FAILURE'
+
+export const DELETE_ONEHSOFGV_REQUEST = 'DELETE_ONEHSOFGV_REQUEST'
+export const DELETE_ONEHSOFGV_SUCCESS = 'DELETE_ONEHSOFGV_SUCCESS'
+export const DELETE_ONEHSOFGV_FAILURE = 'DELETE_ONEHSOFGV_FAILURE'
+
+export const ADD_HS_REQUEST = 'ADD_HS_REQUEST'
+export const ADD_HS_SUCCESS = 'ADD_HS_SUCCESS'
+export const ADD_HS_FAILURE = 'ADD_HS_FAILURE'
+
+export const UPDATE_HS_REQUEST = 'UPDATE_HS_REQUEST'
+export const UPDATE_HS_SUCCESS = 'UPDATE_HS_SUCCESS'
+export const UPDATE_HS_FAILURE = 'UPDATE_HS_FAILURE'
+
+export const DELETE_HS_REQUEST = 'DELETE_HS_REQUEST'
+export const DELETE_HS_SUCCESS = 'DELETE_HS_SUCCESS'
+export const DELETE_HS_FAILURE = 'DELETE_HS_FAILURE'
+
+
+export const DELETE_ONEGVOFHS_REQUEST = 'DELETE_ONEGVOFHS_REQUEST'
+export const DELETE_ONEGVOFHS_SUCCESS = 'DELETE_ONEGVOFHS_SUCCESS'
+export const DELETE_ONEGVOFHS_FAILURE = 'DELETE_ONEGVOFHS_FAILURE'
+// HTTP headers
+export const HTTP_HEADER_JSON = {"Content-Type": "Application/json"}
+
+// types of actions

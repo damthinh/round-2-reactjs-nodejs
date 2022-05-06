@@ -1,0 +1,17 @@
+useState
+usedispatch
+useselector (map dispath
+useeffect(li
+const ws = XLSX.utils.json_to_sheet(listExcel);
+        const wb = { Sheets: { 'Sheet1': ws }, SheetNames: ['Sheet1'] };
+        XLSX.writeFile(wb, 'filename.xlsx');
+
+
+let file = req.files[0]
+        let readFile = XLSX.readFile(file.path,{type:'buffer'})
+        let list_sheet_name =  readFile.SheetNames
+        let excelData = XLSX.utils.sheet_to_json(readFile.Sheets[list_sheet_name[0]])
+        let addExcel = await todoModel.insertMany(excelData)
+        console.log('path',file.path);
+        res.send(addExcel)
+        fs.unlink(`excel/${file.filename}`)

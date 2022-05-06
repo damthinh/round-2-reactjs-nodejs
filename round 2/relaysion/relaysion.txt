@@ -1,0 +1,11 @@
+$push : $each {them 
+$pull : $in {xoa
+$addToSet :$each{them ko trung}
+id_Books:[{
+        type:Mongoose.Schema.Types.ObjectId,
+        ref:'modelBooks'
+    }]
+.populate({
+            path: 'id_Author',
+            select: '-id_Books'
+        })

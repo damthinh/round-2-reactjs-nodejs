@@ -1,0 +1,16 @@
+button:hover{
+    background-color: rgb(14, 123, 220);
+    color: white;
+}
+tr{
+    text-align: center;
+}
+.divImg{
+    position: relative;
+}
+.btnImg{
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    background: none;
+}

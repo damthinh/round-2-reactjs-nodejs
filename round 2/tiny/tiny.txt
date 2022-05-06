@@ -1,0 +1,68 @@
+//rxreduxs redu
+//rcredux contai
+//rcc compo
+name.toLowerCase().includes(textSearch.toLowerCase())
+npm i path
+npm i multer
+npm install --save @tinymce/tinymce-react
+dangerouslySetInnerHTML={{__html:item.content}}
+<Editor
+                    apiKey={'tecpe00a4cesehrsuucg2ieiyi037nl0o0qp23ut727x1gyv'}
+                    value={this.state.content}
+                    onEditorChange={(content) => this.setState({ content: content })}
+                    init={{
+                        height: 500,
+                        width: '50%',
+                        menubar: false,
+                        plugins: [
+                            'advlist autolink lists link image charmap print preview anchor',
+                            'searchreplace visualblocks code fullscreen',
+                            'insertdatetime media table paste code help wordcount image'
+                        ],
+                        toolbar: 'undo redo | formatselect | ' +
+                            'bold italic backcolor | alignleft aligncenter ' +
+                            'alignright alignjustify | bullist numlist outdent indent | ' +
+                            'removeformat |  image help',
+                        content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+
+                        images_upload_handler: async function (blobInfo, success, failure) {
+                            var response;
+                            var url = "http://localhost:3002/img"
+                            var form = new FormData()
+                            form.append("img", blobInfo.blob())
+                            try {
+                                response = await fetch(url, {
+                                    method: 'POST',
+                                    body: form
+                                })
+                                const res = await response.json()
+                                success(res.url)
+                                let nameImg = res.nameImg
+                                arrNameImg.push(nameImg)
+                            } catch (error) {
+                                failure('Invalid JSON: ' + response)
+                                return
+                            }
+                        }
+                    }}
+                />
+
+
+///////////////////
+multer
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, '/tmp/my-uploads')
+  },
+  filename: function (req, file, cb) {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
+    cb(null, file.fieldname + '-' + uniqueSuffix)
+  }
+})
+
+const upload = multer({ storage: storage })
+
+CEMD-104
+MIAA-565
+MIAA-545
+GVH-325

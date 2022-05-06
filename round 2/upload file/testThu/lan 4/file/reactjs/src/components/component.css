@@ -1,0 +1,12 @@
+button:hover{
+    background-color: rgb(6, 96, 174);
+    color: white;
+}
+.spanImg{
+    position: relative;
+}
+.btnImg{
+    position: absolute;
+    right: 0;
+    background: none;
+}

@@ -1,0 +1,11 @@
+.imgcss{
+    position: relative;
+}
+.buttonImg{
+    position: absolute;
+    top : 0;
+    right: 0;
+    background:  none;
+    color: white;
+    border: none;
+}
