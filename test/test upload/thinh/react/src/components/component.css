@@ -1,0 +1,12 @@
+button:hover{
+    background-color: rgb(15, 116, 204);
+    color: white;
+}
+.divImg{
+    position: relative;
+}
+.btnImg{
+    position: absolute;
+    right: 0;
+    background: none;
+}
